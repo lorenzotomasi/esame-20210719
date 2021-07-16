@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../scss/import.scss","../scss/style.scss"],"names":[],"mappings":"AAAQ;AACA;ACAR;EACI;;;AAGJ;EACI;;;AAIJ;EACI;;;AAGJ;EACI;;;AAUJ;EACI,kBANY;EAOZ,OANqB;;AAOrB;EAEI;EACA,OAXQ;EAYR,cAZQ;;AAcZ;EACI,kBAfQ;EAgBR,OAfiB;;;AAmBzB;EACI,kBAnBc;EAoBd,OAnBuB;;AAoBvB;EAEI;EACA,OAxBU;EAyBV,cAzBU;;AA2Bd;EACI,kBA5BU;EA6BV,OA5BmB","file":"index.css"}
