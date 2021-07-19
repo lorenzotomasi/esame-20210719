@@ -46,4 +46,5 @@ La mia sezione di documentazione delle API
 - Entrare in quella denominata `PWA`
 - Digitare il comando `npm install` (è necessario  `Node.js` per questo passaggio)
 - Successivamente usare il comando `npm run serve`
+- Successivamente sarà necessario rendere visibili i dati dal file `db.json` con il comando `json-server db.json` sempre eseguito nella stessa cartella del comando precedente
 - Aprire il `broswer` e recarsi all'indirizzo `http://localhost:8080/`
