@@ -1,24 +1,33 @@
+$background-color: #fdfdfd;
 // Navbar style
 body {
     padding-top: 3.5rem;
+    background-color: $background-color;
 }
 
+$navbar-background: #00305f;
+$footer-background: #175592;
+
 .custom-navbar {
-    background-color: #ebeced;
+    background-color: $navbar-background;
 }
 
 // Footer style
+footer {
+    color: #fff;
+}
+
 .footer-bg {
-    background-color: #f2f2f2;
+    background-color: $footer-background;
 }
 
 .footer-bg-bottom {
-    background-color: #ebeced;
+    background-color: $navbar-background;
 }
 
 // Button
 
-$primary-color: #000;
+$primary-color: #175592;
 $primary-color-contrast: #fff;
 $secondary-color: #239084;
 $secondary-color-contrast: #fff;
@@ -51,4 +60,21 @@ $secondary-color-contrast: #fff;
         background-color: $secondary-color;
         color: $secondary-color-contrast;
     }
+}
+
+// main form
+
+.main-form {
+    border: none;
+    width: 75%;
+    box-shadow: 0px 0px 30px -5px #e7e7e7;
+    background-color: $background-color;
+}
+
+// card
+.horizontal-card {
+    border: none;
+    background-color: $background-color;
+    width: 600px;
+    box-shadow: 0px 0px 30px -5px #e7e7e7;
 }

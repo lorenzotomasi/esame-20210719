@@ -10,6 +10,268 @@
 </head>
 
 <body>
+
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark custom-navbar">
+            <div class="container-fluid">
+                <h3><a class="navbar-brand" href="#"><i class="bi bi-globe2"></i> Touring Club Italiano</a></h3>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <i class="bi bi-house-fill pe-2"></i>Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <i class="bi bi-search pe-2"></i>Cerca la tua località
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Principali località
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Roma</a></li>
+                                <li><a class="dropdown-item" href="#">Venezia</a></li>
+                                <li><a class="dropdown-item" href="#">Firenze</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="py-5">
+        <section class="mb-5">
+            <div class="d-flex justify-content-center">
+                <div class="card p-3 main-form">
+                    <h3 class="card-title">Cerca la tua località</h3>
+                    <div class="card-body d-flex justify-content-evenly">
+                        <div class="flex-sm-grow-1 me-2">
+                            <label for="localita" class="form-label">Località</label>
+                            <div class="input-group flex-nowrap">
+                                <span class="input-group-text" id="localita"><i class="bi bi-building"></i></span>
+                                <input type="text" class="form-control" placeholder="Località"
+                                    aria-describedby="addon-wrapping">
+                            </div>
+                        </div>
+                        <div class="flex-sm-grow-1 ms-2">
+                            <label for="localita" class="form-label">Giorno</label>
+                            <div class="input-group flex-nowrap">
+                                <span class="input-group-text" id="addon-wrapping"><i class="bi bi-calendar"></i></span>
+                                <input type="date" class="form-control" placeholder="Località"
+                                    aria-describedby="addon-wrapping">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body d-flex justify-content-center">
+                        <div class="flex-sm-grow-1">
+                            <label for="localita" class="form-label">Interessi</label>
+                            <div class="input-group flex-nowrap">
+                                <div class="input-group mb-3">
+                                    <label class="input-group-text" for="inputGroupSelect01">Options</label>
+                                    <select class="form-select" id="inputGroupSelect01">
+                                        <option selected>Interessi</option>
+                                        <option value="Storico">Storico</option>
+                                        <option value="Paesagistico">Paesagistico</option>
+                                        <option value="Artistico">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body d-flex justify-content-center">
+                        <button class="btn btn-custom-primary"><i class="bi bi-search pe-2"></i> Cerca</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="ms-4">
+                <h3> Località del momento</h3>
+            </div>
+            <div class="d-flex justify-content-center mt-5">
+                <div class="card mb-3 horizontal-card mx-5">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./assets/colosseo.jpg" class="img-fluid rounded-start" alt="Colosseo">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Colosseo</h5>
+                                <p class="card-text d-flex justify-content-between">
+                                    Tour alla scoperta del colosseo
+                                </p>
+                                <button class="btn btn-outline btn-custom-primary"> Scopri di più</button>
+                                <p class="card-text d-flex justify-content-between mt-4">
+                                    <small class="text-muted">
+                                        <i class="bi bi-hourglass-split pe-2"></i>4 minuti
+                                    </small>
+                                    <small class="text-muted">
+                                        <i class="bi bi-person-fill pe-2"></i>50 in media
+                                    </small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 horizontal-card mx-5">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./assets/uffizi.jpg" class="img-fluid rounded-start" alt="Galleria degli uffizi">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Galleria degli uffizi</h5>
+                                <p class="card-text d-flex justify-content-between">
+                                    Tour alla scoperta degli uffizi
+                                </p>
+                                <button class="btn btn-outline btn-custom-primary"> Scopri di più</button>
+                                <p class="card-text d-flex justify-content-between mt-4">
+                                    <small class="text-muted">
+                                        <i class="bi bi-hourglass-split pe-2"></i>4 minuti
+                                    </small>
+                                    <small class="text-muted">
+                                        <i class="bi bi-person-fill pe-2"></i>50 in media
+                                    </small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center mt-5">
+                <div class="card mb-3 horizontal-card mx-5">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./assets/cinque_terre.jpg" class="img-fluid rounded-start" alt="Le cinque terre">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Le cinque terre</h5>
+                                <p class="card-text d-flex justify-content-between">
+                                    Tour alla scoperta delle Cinque terre
+                                </p>
+                                <button class="btn btn-outline btn-custom-primary"> Scopri di più</button>
+                                <p class="card-text d-flex justify-content-between mt-4">
+                                    <small class="text-muted">
+                                        <i class="bi bi-hourglass-split pe-2"></i>4 minuti
+                                    </small>
+                                    <small class="text-muted">
+                                        <i class="bi bi-person-fill pe-2"></i>50 in media
+                                    </small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 horizontal-card mx-5">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./assets/ponte_vecchio.jpg" class="img-fluid rounded-start"
+                                alt="Galleria degli uffizi">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Ponte vecchio</h5>
+                                <p class="card-text d-flex justify-content-between">
+                                    Tour alla scoperta del Ponte vecchio
+                                </p>
+                                <button class="btn btn-outline btn-custom-primary"> Scopri di più</button>
+                                <p class="card-text d-flex justify-content-between mt-4">
+                                    <small class="text-muted">
+                                        <i class="bi bi-hourglass-split pe-2"></i>1 minuto
+                                    </small>
+                                    <small class="text-muted">
+                                        <i class="bi bi-person-fill pe-2"></i>150 in media
+                                    </small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="text-center text-lg-start footer-bg">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <div class="me-5 d-none d-lg-block">
+                <span>Resta in contatto con i nostri social:</span>
+            </div>
+            <div>
+                <a href="" class="me-4 text-reset">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="bi bi-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                </a>
+            </div>
+        </section>
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Touring Club Italiano
+                        </h6>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quos cum. Quos quis
+                            tempore asperiores obcaecati corporis reiciendis sequi ipsa veniam, voluptate veritatis, cum
+                            quasi adipisci voluptates alias nesciunt non.
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Link Utili
+                        </h6>
+                        <p>
+                            <a href="/home" class="text-reset">Home</a>
+                        </p>
+                        <p>
+                            <a href="/find-locations" class="text-reset">Trova la tua località</a>
+                        </p>
+                        <p>
+                            <a href="locations" class="text-reset">Località</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contatti
+                        </h6>
+                        <p><i class="bi bi-house-fill"></i> Indirizzo</p>
+                        <p>
+                            <i class="bi bi-envelope-fill"></i>
+                            info@touringclubitaliano.it
+                        </p>
+                        <p><i class="bi bi-telephone-fill"></i> + 39 000001034</p>
+                        <p><i class="bi bi-printer-fill"></i> + 39 000001034</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="text-center p-4 footer-bg-bottom">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold" href="">Touring Club Italiano</a>
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
